@@ -37,6 +37,16 @@ alert(`The sum of ${num1} and ${num2} is ${num1+num2}`)
     Profession: [userProfession]` (it should be in three different lines)
 */
 
+let userName =prompt("Please type your userName")
+let userProfession =prompt("choose your profession")
+let isAdult =confirm("Are you Adult or not")
+alert(`I am ${userName} a ${userProfession}`)
+console.log(`I am ${userName} a ${userProfession}`);
+alert(`Username: ${userName}`)
+alert(`profession : ${userProfession}
+${userProfession}
+${userProfession}`)
+
 /*
 . Addition using prompt
 
@@ -47,3 +57,13 @@ alert(`The sum of ${num1} and ${num2} is ${num1+num2}`)
   - Log using console.log [numA - numB]
   - Log using console.log [numA * numB]
 */
+
+
+let numA  =prompt("Enter first number")
+let numB =prompt("Enter second number")
+alert(`sum of both numbers is ${Number(numA)+Number(numB)}`)
+alert(`${numA-numB}`)
+alert(`${numA*numB}`)
+console.log(Number(numA)-Number(numB))
+console.log(Number(numA)* Number(numB))
+
