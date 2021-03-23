@@ -42,11 +42,15 @@ n = 7 => output: heeeeeeello
 // [Your code goes here]
 
 let n = Number(prompt("How many times you want e ?"))
-let output =""
+const start ="h"
+const end  ="llo"
+let middle =""
 
 for (i=0 ; i<=n ;i++) {
-  output=output +
+  middle=middle+ "e"
 }
+
+console.log(start+middle+end)
 
 /*
 Program to calculate the sum of first n natural numbers(1,2,3...n are known as natural numbers). Prompt user to enter n (using `prompt`) then based on input provided calculate and show result in `alert`.
@@ -132,6 +136,38 @@ Take the value of `marks` (0-100) from user using `prompt` and `alert` the messa
 
 // [Your code goes here]
 
+let marks  = Number(prompt("what are marks"))
+
+switch(true) {
+  case marks>90 : alert("AA") ;
+  break;
+
+  case marks>80 && marks<=90 : alert("AB") ;
+  break;
+
+  case marks>70 && marks<=80 : alert("BB") ;
+  break;
+
+  case marks>60 && marks<=70 : alert("BC") ;
+  break;
+
+  case marks>50 && marks<=60 : alert("CC") ;
+  break;
+
+  case marks>40 && marks<=50 : alert("CD") ;
+  break;
+
+  case marks>30 && marks<=40 : alert("DD") ;
+  break;
+
+  case  marks<=30 : alert("FF") ;
+  break;
+
+
+  default : alert("Enter valid marks")
+
+}
+
 /*
 
 
@@ -162,6 +198,19 @@ else {
 🎖Write a JavaScript conditional statement to find the sign (+, -) of product of three numbers. Take those three numbers from user using `prompt`. Display an alert box with the specified sign.
 */
 
+let numone  =Number(prompt("What is first number?"))
+let numtwo  =Number(prompt("What is second number?"))
+let numthree  =Number(prompt("What is three number?"))
+
+let multiply = numone * numtwo * numthree
+
+if (multiply>0) {
+  alert("multiply is positive")
+}
+
+else {
+  alert("multiply is negative")
+}
 
 // [Your code goes here]
 
@@ -178,3 +227,32 @@ else {
 */
 
 // [Your code goes here]
+
+
+let firstNum  =Number(prompt("Enter first number"))
+let secondNum  =Number(prompt("Enter second number"))
+let operation  =(prompt("Enter div,add,sub,mul"))
+
+
+if (operation=="add") {
+  alert(firstNum+secondNum)
+}
+
+else if (operation=="sub") {
+  if (firstNum>secondNum) {
+    alert(firstNum-secondNum)
+  }
+
+  else {
+    alert (secondNum-firstNum)
+  }
+}
+
+else if (operation=="div") {
+  alert(firstNum/secondNum)
+}
+
+
+else if (operation=="mul") {
+  alert(firstNum*secondNum)
+}
